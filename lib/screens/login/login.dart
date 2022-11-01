@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
 
-import 'package:bookmark/screens/login/widgets/forgetpasswordtext.dart';
-import 'package:bookmark/screens/login/widgets/inputtextfield.dart';
-import 'package:bookmark/screens/login/widgets/loginbutton.dart';
+import 'package:bookmark/screens/login/widgets/forget_password_text.dart';
+import 'package:bookmark/screens/login/widgets/input_text_field.dart';
+import 'package:bookmark/screens/login/widgets/login_button.dart';
 import 'package:flutter/material.dart';
 
 
