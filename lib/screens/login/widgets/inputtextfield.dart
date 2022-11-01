@@ -1,0 +1,31 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+
+import 'package:flutter/material.dart';
+
+class MyTextfield extends StatefulWidget {
+  final String hinttext;
+  final bool obscure;
+  final TextEditingController controller;
+  const MyTextfield(
+      {super.key,
+      required this.hinttext,
+      required this.controller,
+      required this.obscure});
+
+  @override
+  State<MyTextfield> createState() => _MyTextfieldState();
+}
+
+class _MyTextfieldState extends State<MyTextfield> {
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: widget.controller,
+      obscureText: widget.obscure,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+        hintText: widget.hinttext,
+      ),
+    );
+  }
+}
