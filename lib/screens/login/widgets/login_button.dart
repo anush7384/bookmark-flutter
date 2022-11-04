@@ -27,7 +27,7 @@ class _MyLoginButtonState extends State<MyLoginButton> {
               borderRadius: BorderRadius.circular(20.0),
             )
              ),
-          onPressed: () {},
+          onPressed: () {Navigator.pushNamed(context, '/dashboard');},
           child: Text('Login', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20.0),),
         ),
       ),
