@@ -12,19 +12,15 @@ class EmptyBookmark extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(bottom:40.0),
           decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 230, 229, 229),
+            // color: Color.fromARGB(255, 230, 229, 229),
           ),
           child:Center(child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(bottom:10.0),
-                child: Container(
-                  height:50.0,
-                  width:50.0,
-                  color:Color.fromARGB(255, 7, 131, 255),
-                ),
+            children:  [
+              Icon(Icons.bookmark_rounded,
+                color:blue,
+                size:35.0,
               ),
               const Text('No bookmarks Found',
               style: TextStyle(

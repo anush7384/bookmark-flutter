@@ -16,7 +16,6 @@ class _TopBarState extends State<TopBar> {
       padding: const EdgeInsets.symmetric(horizontal: 0.0),
       child: Container(
         decoration: const BoxDecoration(
-          color: Colors.pink,
         ),
         height: 70.0,
         child: Center(
@@ -84,12 +83,8 @@ class _TopBarState extends State<TopBar> {
                 ),
               ),
             ),
-            Container(
-              width: 40.0,
-              height: 40.0,
-              decoration: const BoxDecoration(
-                color: Colors.yellow,
-              ),
+            Image.asset(
+              "assets/profile_picture.png",
             ),
           ]),
         ),
