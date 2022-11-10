@@ -1,17 +1,12 @@
-import 'package:bookmark/screens/signup/widgets/signup_mid.dart';
 import 'package:flutter/material.dart';
+import '../../screens/signup/widgets/signup_mid.dart';
 
-class SignupPage extends StatefulWidget {
+class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
 
   @override
-  State<SignupPage> createState() => _SignupPage();
-}
-
-class _SignupPage extends State<SignupPage> {
-  @override
   Widget build(BuildContext context) {
-    return (Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -22,13 +17,17 @@ class _SignupPage extends State<SignupPage> {
           color: Colors.black,
         ),
         centerTitle: true,
-        title: const Text('Sign Up',
-            style: TextStyle(
-              color: Colors.black,
-            )),
+        title: const Text(
+          'Sign Up',
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
         backgroundColor: Colors.white,
       ),
-      body: const Center(child: MidSignup()),
-    ));
+      body: const Center(
+        child: MidSignup(),
+      ),
+    );
   }
 }

@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: '/dashboard',
-      // initialRoute: '/',
+      // initialRoute: '/dashboard',
+      initialRoute: '/',
       routes: {
         '/': (context) => const SignupPage(),
-        '/login': (context) => const LoginPage(), 
+        '/login': (context) => const LoginPage(),
         '/dashboard': (context) => const DashboardPage(),
       },
       theme: ThemeData(

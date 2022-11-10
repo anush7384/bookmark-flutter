@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:bookmark/utils/color_constants.dart';
 
-class BottomQuickLink extends StatefulWidget {
+import '../../../utils/color_constants.dart';
+
+class BottomQuickLink extends StatelessWidget {
   const BottomQuickLink({super.key});
 
-  @override
-  State<BottomQuickLink> createState() => _BottomQuickLinkState();
-}
-
-class _BottomQuickLinkState extends State<BottomQuickLink> {
   @override
   Widget build(BuildContext context) {
     return Expanded(

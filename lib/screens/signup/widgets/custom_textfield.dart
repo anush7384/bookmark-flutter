@@ -1,15 +1,12 @@
-import 'package:bookmark/utils/color_constants.dart';
 import 'package:flutter/material.dart';
+
+import '../../../utils/color_constants.dart';
 
 class CustomTextfield extends StatefulWidget {
   final String hintText;
-  final bool obscure;
   final TextEditingController controller;
   const CustomTextfield(
-      {super.key,
-      required this.hintText,
-      required this.obscure,
-      required this.controller});
+      {super.key, required this.hintText, required this.controller});
 
   @override
   State<CustomTextfield> createState() => _CustomTextfieldState();
@@ -24,7 +21,7 @@ class _CustomTextfieldState extends State<CustomTextfield> {
       decoration: const BoxDecoration(),
       height: 45.0,
       child: TextField(
-        obscureText: widget.hintText == 'Password' ? hide : true,
+        obscureText: widget.hintText == 'Password' ? hide : false,
         controller: widget.controller,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.only(left: 10.0, bottom: 20.0),
@@ -33,25 +30,18 @@ class _CustomTextfieldState extends State<CustomTextfield> {
               ? IconButton(
                   onPressed: () {
                     setState(() {
-                      if (hide) {
-                        hide = false;
-                      } else {
-                        hide = true;
-                      }
+                      hide = !hide;
                     });
                   },
-                  icon: Icon(
-                      hide == false ? Icons.remove_red_eye : Icons.password),
-                  color: Colors.grey.shade400,
+                  icon: const Icon(Icons.remove_red_eye),
+                  color: hide == true
+                      ? Colors.grey.shade400
+                      : const Color.fromARGB(255, 243, 104, 94),
                 )
-              : IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.abc),
-                ),
+              : null,
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(
-                color: enabledInputColor, width: 1.0),
+            borderSide: BorderSide(color: enabledInputColor, width: 1.0),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
