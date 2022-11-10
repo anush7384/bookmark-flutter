@@ -1,11 +1,14 @@
 // import 'package:flutter/cupertino.dart';
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:bookmark/screens/bottomsheet/widgets/foldersheet/folder_bottom_sheet.dart';
 import 'package:bookmark/screens/dashboard/widgets/bookmark_description.dart';
 import 'package:bookmark/screens/dashboard/widgets/bookmark_folder.dart';
 import 'package:bookmark/screens/dashboard/widgets/bookmark_image.dart';
 import 'package:bookmark/screens/dashboard/widgets/bookmark_title.dart';
 import 'package:flutter/material.dart';
+
+import '../../bottomsheet/widgets/movesheet/move_bottom_sheet.dart';
 // import 'package:flutter/src/widgets/container.dart';
 // import 'package:flutter/src/widgets/framework.dart';
 
@@ -42,6 +45,14 @@ class _BookmarkContainerState extends State<BookmarkContainer> {
             Padding(
               padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
               child: BookmarkPath(),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0),
+              child: FolderBottomSheet(),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0),
+              child: MoveBottomSheet(),
             ),
           ],
         ),

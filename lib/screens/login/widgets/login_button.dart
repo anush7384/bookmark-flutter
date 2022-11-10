@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/src/widgets/framework.dart';
 
 class MyLoginButton extends StatefulWidget {
-  const MyLoginButton({super.key});
+  final String text;
+  const MyLoginButton({super.key, required this.text});
 
   @override
   State<MyLoginButton> createState() => _MyLoginButtonState();
@@ -14,7 +15,7 @@ class MyLoginButton extends StatefulWidget {
 class _MyLoginButtonState extends State<MyLoginButton> {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width*0.5;
+    double width = MediaQuery.of(context).size.width * 0.5;
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),
       child: Container(
@@ -22,13 +23,18 @@ class _MyLoginButtonState extends State<MyLoginButton> {
         width: width,
         child: TextButton(
           style: TextButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.blueAccent,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20.0),
-            )
-             ),
-          onPressed: () {Navigator.pushNamed(context, '/dashboard');},
-          child: Text('Login', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20.0),),
+              foregroundColor: Colors.white,
+              backgroundColor: Colors.blueAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              )),
+          onPressed: () {
+            Navigator.pushNamed(context, '/dashboard');
+          },
+          child: Text(
+            widget.text,
+            style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20.0),
+          ),
         ),
       ),
     );
