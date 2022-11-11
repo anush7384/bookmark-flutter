@@ -1,9 +1,8 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
-
-import 'package:bookmark/screens/login/widgets/forget_password_text.dart';
-import 'package:bookmark/screens/login/widgets/input_text_field.dart';
-import 'package:bookmark/screens/login/widgets/login_button.dart';
+import './widgets/forget_password_text.dart';
+import './widgets/input_text_field.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/button.dart';
 
 class MyLoginPage extends StatefulWidget {
   const MyLoginPage({super.key});
@@ -19,11 +18,11 @@ class _MyLoginPageState extends State<MyLoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(
+        leading: const Icon(
           Icons.arrow_back,
           color: Colors.black,
         ),
-        title: Text(
+        title: const Text(
           "Sign In",
           style: TextStyle(color: Colors.black),
         ),
@@ -34,13 +33,13 @@ class _MyLoginPageState extends State<MyLoginPage> {
       ),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Column(
             children: [
               Padding(
                 padding: const EdgeInsets.only(bottom: 30),
                 child: MyTextfield(
-                  hinttext: 'Enter your Email',
+                  hintText: 'Enter your Email',
                   controller: emailcontroller,
                   obscure: false,
                 ),
@@ -48,15 +47,15 @@ class _MyLoginPageState extends State<MyLoginPage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 30.0),
                 child: MyTextfield(
-                  hinttext: 'Enter your password',
+                  hintText: 'Enter your password',
                   controller: passwordcontroller,
                   obscure: true,
                 ),
               ),
-              MyLoginButton(
+              const Button(
                 text: 'Login',
               ),
-              MyForgetPasswordText()
+              const MyForgetPasswordText()
             ],
           ),
         ),

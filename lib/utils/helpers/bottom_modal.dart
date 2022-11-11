@@ -1,10 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 import '../../screens/bottomsheet/widgets/bottom_sheet_name.dart';
-import '../../screens/bottomsheet/widgets/bottom_sheet_title.dart';
-import '../../screens/login/widgets/login_button.dart';
+import '../../screens/login/widgets/button.dart';
 
 void showModal(
     {required BuildContext context,
@@ -23,7 +20,7 @@ void showModal(
           middlewidget,
           Padding(
             padding: const EdgeInsets.only(top: 20.0, right: 15.0, left: 15.0),
-            child: MyLoginButton(text: logintext),
+            child: Button(text: logintext),
           ),
         ]);
       });

@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_unnecessary_containers
-
 import 'package:flutter/material.dart';
 
 class SheetName extends StatelessWidget {
@@ -8,14 +6,15 @@ class SheetName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
         Text(
           title,
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         const Icon(Icons.cancel_outlined),
-      ]),
+      ],
     );
   }
 }

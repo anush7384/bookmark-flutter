@@ -1,12 +1,10 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'package:bookmark/screens/dashboard/widgets/bookmarks.dart';
+import '../screens/dashboard/widgets/bookmarks.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/login/login.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key, });
 
   // This widget is the root of your application.
   @override
@@ -16,8 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/login',
       routes: {
-        '/login':(context) => MyLoginPage(),
-        '/dashboard':(context) => BookmarkContainer(),
+        '/login':(context) => const MyLoginPage(),
+        '/dashboard':(context) => const BookmarkContainer(),
       },
       );
   }
