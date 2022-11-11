@@ -17,7 +17,9 @@ class _SignupButton extends State<SignupButton> {
       height: 45.0,
       width: width * 1.0,
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/dashboard');
+        },
         style: ButtonStyle(
             backgroundColor: MaterialStatePropertyAll<Color>(ColorTheme().blue),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(

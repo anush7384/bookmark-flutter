@@ -21,7 +21,7 @@ class Button extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            Navigator.pushNamed(context, '/dashboard');
+            Navigator.pushNamed(context, '/bookmark');
           },
           child: Text(
             text,

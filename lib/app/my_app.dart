@@ -1,4 +1,5 @@
 import 'package:bookmark/screens/dashboard/dashboard.dart';
+import 'package:bookmark/screens/dashboard/widgets/bookmarks.dart';
 import 'package:bookmark/screens/login/login.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const SignupPage(),
         '/dashboard': (context) => const DashboardPage(),
         '/login':(context) => const MyLoginPage(),
-        // '/dashboard':(context) => const BookmarkContainer(),
+        '/bookmark':(context) => const BookmarkContainer(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
