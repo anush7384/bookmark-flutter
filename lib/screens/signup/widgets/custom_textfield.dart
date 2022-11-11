@@ -41,11 +41,12 @@ class _CustomTextfieldState extends State<CustomTextfield> {
               : null,
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: enabledInputColor, width: 1.0),
+            borderSide: BorderSide(color: ColorTheme().enabledInputColor, width: 1.0),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: focusedInputColor, width: 1.0),
+            borderSide:
+                BorderSide(color: ColorTheme().focusedInputColor, width: 1.0),
           ),
         ),
       ),

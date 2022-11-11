@@ -21,7 +21,7 @@ class DrawerButton extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Icon(Icons.logout, color: blue),
+          Icon(Icons.logout, color: ColorTheme().blue),
           const SizedBox(width: 15.0),
           Text(
             type,

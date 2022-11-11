@@ -12,7 +12,7 @@ class QuickLink extends StatelessWidget {
       height: 280.0,
       padding: const EdgeInsets.only(left: 15.0, right: 10.0, top: 10.0),
       decoration: BoxDecoration(
-        color: blue,
+        color: ColorTheme().blue,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,13 +44,13 @@ class QuickLink extends StatelessWidget {
                 fillColor: const Color.fromARGB(218, 107, 107, 249),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                  borderSide:
-                      const BorderSide(color: quicklinkColor, width: 1.0),
+                  borderSide: BorderSide(
+                      color: ColorTheme().quicklinkColor, width: 1.0),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                  borderSide:
-                      const BorderSide(color: quicklinkColor, width: 1.0),
+                  borderSide: BorderSide(
+                      color: ColorTheme().quicklinkColor, width: 1.0),
                 ),
               ),
             ),

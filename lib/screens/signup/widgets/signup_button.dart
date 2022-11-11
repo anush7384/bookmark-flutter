@@ -19,7 +19,7 @@ class _SignupButton extends State<SignupButton> {
       child: TextButton(
         onPressed: () {},
         style: ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll<Color>(blue),
+            backgroundColor: MaterialStatePropertyAll<Color>(ColorTheme().blue),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14.0)))),

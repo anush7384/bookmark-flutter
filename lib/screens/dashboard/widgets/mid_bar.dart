@@ -19,7 +19,7 @@ class MidBar extends StatelessWidget {
               padding: const EdgeInsets.only(right: 10.0),
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: blue,
+                  color: ColorTheme().blue,
                   width: 1.5,
                 ),
                 shape: BoxShape.rectangle,
@@ -28,14 +28,14 @@ class MidBar extends StatelessWidget {
               child: TextButton.icon(
                 icon: Icon(
                   Icons.add,
-                  color: blue,
+                  color: ColorTheme().blue,
                 ),
                 onPressed: () {},
                 label: Text(
                   'Add Link',
                   style: TextStyle(
                     fontSize: 18.0,
-                    color: blue,
+                    color: ColorTheme().blue,
                   ),
                 ),
               ),
@@ -48,7 +48,7 @@ class MidBar extends StatelessWidget {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: blue,
+                        color: ColorTheme().blue,
                         borderRadius: const BorderRadius.all(
                           Radius.circular(10.0),
                         ),
@@ -73,7 +73,7 @@ class MidBar extends StatelessWidget {
                       child: Icon(
                         Icons.add_box_outlined,
                         size: 30.0,
-                        color: blue,
+                        color: ColorTheme().blue,
                       ),
                     ),
                   ),

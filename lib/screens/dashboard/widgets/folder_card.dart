@@ -32,7 +32,7 @@ class FolderCard extends StatelessWidget {
             child: Center(
               child: Icon(
                 Icons.folder,
-                color: blue,
+                color: ColorTheme().blue,
               ),
             ),
           ),

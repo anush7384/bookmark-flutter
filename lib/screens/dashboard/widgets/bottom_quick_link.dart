@@ -36,7 +36,8 @@ class BottomQuickLink extends StatelessWidget {
                         onPressed: () {},
                         style: ButtonStyle(
                           backgroundColor:
-                              MaterialStateProperty.all(quicklinkColor),
+                              MaterialStateProperty.all(
+                              ColorTheme().quicklinkColor),
                           shape:
                               MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
@@ -67,7 +68,7 @@ class BottomQuickLink extends StatelessWidget {
                         child: Text(
                           'Save',
                           style: TextStyle(
-                            color: blue,
+                            color: ColorTheme().blue,
                           ),
                         ),
                       ),

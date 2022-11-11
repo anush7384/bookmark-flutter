@@ -1,5 +1,5 @@
-import 'package:bookmark/screens/dashboard/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
+import '../../screens/dashboard/widgets/custom_drawer.dart';
 
 import '../dashboard/widgets/dashboard_body.dart';
 

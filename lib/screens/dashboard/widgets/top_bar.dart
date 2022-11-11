@@ -68,12 +68,12 @@ class TopBar extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15.0),
                       borderSide:
-                          BorderSide(color: enabledInputColor, width: 1.0),
+                          BorderSide(color: ColorTheme().enabledInputColor, width: 1.0),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15.0),
-                      borderSide:
-                          BorderSide(color: focusedInputColor, width: 1.0),
+                      borderSide: BorderSide(
+                          color: ColorTheme().focusedInputColor, width: 1.0),
                     ),
                   ),
                 ),

@@ -23,7 +23,7 @@ class Terms extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "terms of Service and Privacy Policy",
-                    style: TextStyle(color: blue),
+                    style: TextStyle(color: ColorTheme().blue),
                   ),
                 ],
               ),

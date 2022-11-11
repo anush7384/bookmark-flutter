@@ -20,15 +20,15 @@ class EmptyBookmark extends StatelessWidget {
               children: [
                 Icon(
                   Icons.bookmark_rounded,
-                  color: blue,
+                  color: ColorTheme().blue,
                   size: 35.0,
                 ),
-                const Text(
+                Text(
                   'No bookmarks Found',
                   style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
-                    color: fontgrey,
+                    color: ColorTheme().fontgrey,
                   ),
                 ),
                 const Padding(

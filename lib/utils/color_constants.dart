@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
-Color focusedInputColor = const Color.fromARGB(250, 137, 165, 247);
+class ColorTheme{
 
-Color enabledInputColor = const Color.fromARGB(251, 228, 223, 223);
+  Color focusedInputColor = const Color.fromARGB(250, 137, 165, 247);
 
-Color blue = const Color.fromARGB(248, 92, 92, 249);
+  Color enabledInputColor = const Color.fromARGB(251, 228, 223, 223);
 
-const fontgrey = Color.fromARGB(248, 71, 71, 73);
+  Color blue = const Color.fromARGB(248, 92, 92, 249);
 
-const quicklinkColor = Color.fromARGB(218, 107, 107, 249);
+  Color fontgrey = const Color.fromARGB(248, 71, 71, 73);
+
+  Color quicklinkColor = const Color.fromARGB(218, 107, 107, 249);
+
+}
